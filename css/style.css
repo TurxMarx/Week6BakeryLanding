@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200..700&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    line-height: 2;
+    
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #ffffff5e, #000000a2) ,url('../img/cake1.webp');
+    background-position: center;
+    background-size: cover;
+    
+    
+
+}
+
+.text-box {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: rgb(red, green, blue);
+    text-shadow: 0 0 3px #0c0707, 0 0 5px #ff0095;
+    
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80%{
+       transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.15rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+    @keyframes moveInRight {
+        0% {
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+    
+        80%{
+           transform: translateX(-50px);
+        }
+    
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .btn-container {
+        text-align: center;
+    }
+
+    .btn {
+        border-bottom: 0.2rem solid rgb(163, 130, 130);
+        color: #fff;
+        display: inline-block;
+        font-size: 3rem;
+        padding: 1rem;
+        margin-top: 5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #ff009549;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+    }
+
+    .btn:active {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transform: translateY(5px);
+    }
+
+    .main {
+        background-color: rgb(183, 103, 103);
+        height: 1100px;
+        margin-top: -5rem;
+        text-align: center;
+        padding-top: 5rem;
+        clip-path: polygon(51% 2%, 100% 0, 100% 43%, 100% 91%, 100% 91%, 52% 95%, 0 100%, 0% 43%, 0 0);
+
+    }
+
+    .main h1 {
+        color: #fff;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-shadow: 0 0 3px #0c0707, 0 0 5px #ff0095;
+    }
+
+    .gallery {
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        width: 75%;
+    }
+
+    .gallery_photo {
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+        outline-offset: 1rem;
+        position: absolute;
+        width: 400px;
+        transition: all 0.3s;
+        z-index: 10;
+    }
+    .gallery_photo:hover {
+        outline: 1.8rem solid rgba(183, 103, 103);
+        transform: scale(1.1);
+        z-index: 30;
+    }
+
+    .gallery_photo-2 {
+        left: 20%;
+        top: 15%;
+        width: 350px;
+    }
+
+    .gallery_photo-4 {
+        left: 50%;
+        top: 45%;
+        
+    }
+
+    .gallery_photo-3 {
+        left: 35%;
+        top: 25%;
+        width: 400px;
+    }
+
+    .footer {
+        color: rgb(170, 170, 143);
+        font-size: 2rem;
+        height: 200px;
+        padding: 2rem;
+        text-align: center;
+        
+    }
+
+    .footer ul li {
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .footer ul li a {
+        color: rgb(170, 170, 143);
+        text-decoration: none;
+    }
+
+    .footer ul li:hover,.footer ul li a:hover {
+         color: rgb(183, 103, 103);
+         transform: scale(1.2);
+    }
